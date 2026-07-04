@@ -1,0 +1,52 @@
+name: Bug report
+description: Report a problem with The Esoteric Order
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Please do not include secrets, tokens, or private account details.
+  - type: input
+    id: page
+    attributes:
+      label: Page, level, or area
+      description: Where did this happen?
+      placeholder: Home, leaderboard, level 17, continue code, audio, mobile...
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug or confusing behavior.
+      placeholder: I clicked..., expected..., but saw...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the shortest steps that reproduce the issue.
+      placeholder: |
+        1. Go to...
+        2. Enter...
+        3. Click...
+        4. See...
+    validations:
+      required: false
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Chrome on Windows, Safari on iPhone, Firefox on macOS...
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Extra notes
+      description: Add screenshots, console errors, level numbers, or timing details if helpful.
+    validations:
+      required: false
